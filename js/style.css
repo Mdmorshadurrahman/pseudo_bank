@@ -1,0 +1,39 @@
+#email-label {
+    display: none;
+    position: absolute;
+    top: 38%;
+    left: 30.5%;
+    font-size: medium;
+}
+
+#password-label {
+    display: none;
+    position: absolute;
+    top: 52%;
+    left: 30.5%;
+    font-size: medium;
+}
+
+#show-password {
+    position: absolute;
+    left: 63%;
+    top: 58%;
+}
+
+#show-password:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+input[type=email]:not(:placeholder-shown)+#email-label {
+    display: block;
+}
+
+input[type=password]:not(:placeholder-shown)+#password-label {
+    display: block;
+}
+
+input[type=email]:focus,
+input[type=password]:focus {
+    box-shadow: 0.1px 0.1px 8px 0.5px blue;
+}
