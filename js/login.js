@@ -1,6 +1,7 @@
+var count = 0;
+var limit = 3;
 document.getElementById('btn-login').addEventListener('click', function () {
-    var count = 0;
-    var limit = 3;
+
     const emailId = document.getElementById('email-entry').value;
     const emailpassword = document.getElementById('password-entry').value;
     if (count < limit) {
@@ -9,17 +10,18 @@ document.getElementById('btn-login').addEventListener('click', function () {
             count = 0;
         }
         else {
-            document.getElementById('email-entry').value = '';
-            document.getElementById('password-entry').value = '';
             // console.log('wrong')
-            document.getElementById('error-msg').innerText = "You have entered wrong password\n\nYou have attempt left: " + (limit - count);
+            document.getElementById('error-msg').innerText = "You have entered wrong password\n\nattempt left: " + (limit - count);
             console.log(limit - count);
             count++;
-
+            console.log(count);
+            document.getElementById('email-entry').value = '';
+            document.getElementById('password-entry').value = '';
         }
     }
     else {
         document.getElementById('btn-login').style.display = 'none';
+        document.getElementById('error-msg').innerText = "You have entered wrong password\n\nYou have attempt left: " + (limit - count) + '\n\n!!!YOUR ACCOUNT HAS BEEN TEMPORARILY LOCKED!!!';
     }
 })
 document.getElementById('show-password').addEventListener('click', function () {
