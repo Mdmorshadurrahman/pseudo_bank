@@ -6,7 +6,7 @@ document.getElementById('btn-login').addEventListener('click', function () {
     const emailpassword = document.getElementById('password-entry').value;
     if (count < limit) {
         if (emailpassword == 123456 && emailId === 'joseph@gmail.com') {
-            window.location.href = 'homepage.html';
+            window.location.href = './homepage.html';
             count = 0;
         }
         else {
