@@ -8,3 +8,7 @@ function setValueIntoId(outputId, newValue) {
     const amountset = document.getElementById(outputId)
     amountset.innerText = newValue;
 }
+function getTextFromId(inputId) {
+    const textGet = document.getElementById(inputId);
+    return parseFloat(textGet.innerText);
+}
