@@ -5,9 +5,10 @@ document.getElementById('btn-login').addEventListener('click', function () {
     const emailId = document.getElementById('email-entry').value;
     const emailpassword = document.getElementById('password-entry').value;
     if (count < limit) {
-        if (emailpassword == 123456 && emailId === 'joseph@gmail.com') {
-            window.location.href = './homepage.html';
+        if (emailpassword == 123456 && emailId === 'joseph') {
             count = 0;
+            alert("***Hello " + emailId + "***\nWelcome to Your Account")
+            window.location.href = './homepage.html';
         }
         else {
             // console.log('wrong')

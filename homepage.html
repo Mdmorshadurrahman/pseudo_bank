@@ -8,15 +8,77 @@
     <title>Homepage</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/b6d9270fd8.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="/media/image/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
-    <header class="text-center">
-        <p class="text-center bg-red-600">Welcome to PSEUDO BANK</p>
-        <p class="text-9xl">UNDER CONSTRUCTION</p>
-        <i class="fa-solid fa-wrench text-9xl "></i>
-
+    <header class="grid grid-cols-12 gap-2 items-center mx-10">
+        <div class="text-red-600 col-span-9">
+            <a href=".//homepage.html"><i class="fa-solid fa-p text-5xl"></i><span
+                    class="text-3xl font-extralight inline-block ml-5 py-5">
+                    Pseudo
+                    <br>
+                    Bank</span></a>
+        </div>
+        <div class="text-sm text-black font-medium font-light text-3xl">
+            <a href="#"><i class="fa-solid fa-magnifying-glass"> &nbsp; Search</i></a>
+        </div>
+        <div class="text-sm text-black">
+            <a href=".//homepage.html"><i class="fa-solid fa-house"> &nbsp; Home</i></a>
+        </div>
+        <div>
+            <a href=".//index.html"><button id="btn-login"
+                    class="text-sm text-black font-medium bg-gray-300 hover:bg-red-500 hover:text-white rounded-3xl text-center w-full my-auto mx-auto h-10"><i
+                        class="fa-solid fa-power-off"></i> Logout</button></a>
+        </div>
     </header>
+    <!-- nav-bar ends -->
+    <div class="mt-10">
+        <h1 class="text-center text-gray-600 font-normal text-5xl ">Welcome to your Pseudo Account
+            </p>
+    </div>
+    <section class="mt-10 w-9/12 mx-auto">
+        <!-- balance section -->
+        <div class=" grid grid-cols-3 gap-2">
+            <div class="p-8 border border-slate-200 rounded-md hover:bg-red-500">
+                <p class="text-black text-2xl font-semibold">Deposit</p>
+                <p class="text-gray-500 text-lg"><span id="deposited">00</span> EUR</p>
+            </div>
+            <div class="border border-slate-200 p-8 rounded-md hover:bg-red-500" id="balance-box">
+                <p class="text-black text-2xl font-semibold">Balance</p>
+                <p class="text-gray-500 text-lg"><span id="balanced">00</span> EUR</p>
+            </div>
+            <div class="border border-slate-200 p-8 rounded-md hover:bg-red-500">
+                <p class="text-black text-2xl font-semibold">Withdraw</p>
+                <p class="text-gray-500 text-lg"><span id="withdrawn">00</span> EUR</p>
+            </div>
+        </div>
+        <!-- balance end -->
+    </section>
+    <section class="mt-10 w-9/12 mx-auto">
+        <!-- deposit starts -->
+        <div class="grid grid-cols-2 gap-2">
+            <div class="p-8 rounded-md border border-slate-200 hover:border-red-500" id="deposit-box">
+                <p class="text-black text-2xl font-semibold mb-5">Deposit Amount</p>
+                <input type="number" id="input-deposit" class="mb-5 border border-black rounded-md pl-2"
+                    placeholder="Enter amount">
+                Euro
+                <br> <button class="py-2 px-5 rounded-md border bg-gray-300 hover:bg-red-500 font-semibold"
+                    id="btn-deposit">Enter</button>
+            </div>
+            <div class="p-8 rounded-md border border-slate-200 hover:border-red-500" id="withdraw-box">
+                <p class="text-black text-2xl font-semibold mb-5">Withdraw Amount</p>
+                <input type="number" name="" id="input-withdraw" class="mb-5 border border-black rounded-md pl-2"
+                    placeholder="Enter amount"> Euro
+                <br> <button class="px-5 py-2 rounded-md border bg-gray-300 hover:bg-red-500 font-semibold"
+                    id="btn-withdraw">Enter</button>
+            </div>
+        </div>
+        <!-- deposit ends -->
+    </section>
+    <!-- main section ends -->
+    <script src=".//js/function.js"></script>
+    <script src=".//js/homapage.js"></script>
 </body>
 
 </html>
