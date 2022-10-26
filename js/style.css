@@ -1,3 +1,10 @@
+#password-entry{
+    position: relative;
+}
+
+#email-entry{
+    position: relative;
+}
 #email-label {
     display: none;
     position: absolute;
