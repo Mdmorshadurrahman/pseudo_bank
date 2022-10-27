@@ -35,15 +35,20 @@
         <p class="mt-20 text-3xl text-black text-center font-semibold">Enter Your Login Information</p>
         <!-- input form section starts -->
         <div class=" text-center mt-10 h-40">
-            <input
-                class="border border-slate-600 rounded-md block mx-auto mb-5 h-1/2 w-5/12 pl-5 text-2xl font-normal text-black placeholder:text-slate-600"
-                type="email" id="email-entry" placeholder="User Name">
-            <label id="email-label" for="email">User Name</label>
-            <input
-                class="border border-slate-400 rounded-md h-1/2 w-5/12 pl-5 text-2xl font-normal text-black placeholder:text-slate-600"
-                type="password" id="password-entry" placeholder="Password/PIN"><label class="inline-block"
-                id="password-label" for="password">Password/PIN</label>
-            <label for="" id="show-password">show-password</label>
+            <div class="email-box mb-5 h-1/2 w-5/12 mx-auto">
+                <input
+                    class="border border-slate-600 rounded-md block pl-5 w-full h-full  text-2xl font-normal text-black placeholder:text-slate-600"
+                    type="email" id="email-entry" placeholder="User Name"><label class="pl-5" id="email-label"
+                    for="email">User
+                    Name</label>
+            </div>
+            <div class="password-box h-1/2 w-5/12 mx-auto">
+                <input
+                    class="border border-slate-400 rounded-md pl-5 h-full w-full text-2xl font-normal text-black placeholder:text-slate-600"
+                    type="password" id="password-entry" placeholder="Password/PIN"><label class="pl-5"
+                    id="password-label" for="password">Password/PIN</label><label class=" text-end ml-96 block "
+                    for="password" id="show-password">show-password</label>
+            </div>
         </div>
         <div class="text-center">
             <button id="btn-login"

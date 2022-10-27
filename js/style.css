@@ -1,23 +1,25 @@
+.email-box,
+.password-box {
+    position: relative;
+}
+
 #email-label {
     display: none;
     position: absolute;
-    top: 38%;
-    left: 30.5%;
+    top: 10%;
     font-size: medium;
 }
 
 #password-label {
     display: none;
     position: absolute;
-    top: 52%;
-    left: 30.5%;
+    top: 10%;
     font-size: medium;
 }
 
 #show-password {
     position: absolute;
-    left: 63%;
-    top: 58%;
+    top: 50%;
 }
 
 #show-password:hover {
