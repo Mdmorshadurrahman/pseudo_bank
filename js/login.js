@@ -1,7 +1,6 @@
 var count = 0;
 var limit = 3;
 document.getElementById('btn-login').addEventListener('click', function () {
-
     const emailId = document.getElementById('email-entry').value;
     const emailpassword = document.getElementById('password-entry').value;
     if (count < limit) {

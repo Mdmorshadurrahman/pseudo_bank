@@ -7,15 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
     <script src="https://kit.fontawesome.com/b6d9270fd8.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href=".//js/style.css">
     <link rel="shortcut icon" href=".//media/image/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.42.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 
 <body>
     <!-- nav-bar starts -->
-    <header class="bg-red-600 grid grid-cols-3 text-white items-center ">
+    <header
+        class="bg-red-600 grid sm:grid-cols-3 max-sm:grid-cols-2 text-white items-center max-sm:justify-center max-sm:flex">
         <div class=" ml-10">
             <a href=".//index.html"><i class="fa-solid fa-p text-5xl"></i><span
                     class="text-3xl font-extralight inline-block ml-5 py-5">
@@ -24,9 +26,9 @@
                     Bank</span></a>
         </div>
         <div>
-            <p class="text-center font-light text-5xl ">Login Page</p>
+            <p class="text-center font-light text-5xl max-sm:hidden ">Login Page</p>
         </div>
-        <div class="font-light text-3xl text-right mr-10">
+        <div class="font-light text-3xl text-right mr-10 max-sm:hidden">
             <p>contact us <i class="fa-regular fa-circle-question text-2xl"></i></p>
         </div>
     </header>
@@ -35,24 +37,24 @@
         <p class="mt-20 text-3xl text-black text-center font-semibold">Enter Your Login Information</p>
         <!-- input form section starts -->
         <div class=" text-center mt-10 h-40">
-            <div class="email-box mb-5 h-1/2 w-5/12 mx-auto">
+            <div class="email-box mb-5 h-1/2 w-5/12 max-[400px]:w-40 mx-auto">
                 <input
                     class="border border-slate-600 rounded-md block pl-5 w-full h-full  text-2xl font-normal text-black placeholder:text-slate-600"
                     type="email" id="email-entry" placeholder="User Name"><label class="pl-5" id="email-label"
                     for="email">User
                     Name</label>
             </div>
-            <div class="password-box h-1/2 w-5/12 mx-auto">
+            <div class="password-box h-1/2 w-5/12 max-[400px]:w-40 mx-auto">
                 <input
                     class="border border-slate-400 rounded-md pl-5 h-full w-full text-2xl font-normal text-black placeholder:text-slate-600"
                     type="password" id="password-entry" placeholder="Password/PIN"><label class="pl-5"
-                    id="password-label" for="password">Password/PIN</label><label class=" text-end ml-96 block "
+                    id="password-label" for="password">Password/PIN</label><label class=" block mt-4 ml-6"
                     for="password" id="show-password">show-password</label>
             </div>
         </div>
         <div class="text-center">
             <button id="btn-login"
-                class="text-xl text-white font-semibold p-2 bg-red-600 hover:bg-red-800 rounded-3xl mt-20 text-center w-1/12 mx-auto h-14">Login</button>
+                class="text-xl text-white font-semibold p-2 bg-red-600 hover:bg-red-800 rounded-3xl mt-20 text-center max-md:w-auto md:w-1/12 mx-auto h-14">Login</button>
         </div>
         <!-- input form section ends -->
     </section>

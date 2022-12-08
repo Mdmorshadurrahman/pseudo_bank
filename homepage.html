@@ -13,22 +13,47 @@
 
 <body>
     <header class="grid grid-cols-12 gap-2 items-center mx-10">
-        <div class="text-red-600 col-span-9">
+        <div class="text-red-600 col-span-9 bg-red-800">
             <a href=".//homepage.html"><i class="fa-solid fa-p text-5xl"></i><span
                     class="text-3xl font-extralight inline-block ml-5 py-5">
                     Pseudo
                     <br>
                     Bank</span></a>
         </div>
-        <div class="text-sm text-black font-medium font-light text-3xl">
+        <div class="hidden max-lg:flex">
+            <div class="dropdown dropdown-left">
+                <label tabindex="0" class="btn m-1"><i class="fa-solid fa-bars"></i></label>
+                <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+                    <li>
+                        <div class="text-sm text-center text-black font-medium font-light text-3xl">
+                            <a href="#"><i class="fa-solid fa-magnifying-glass"> &nbsp; Search</i></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="text-sm text-black  text-center">
+                            <a href=".//homepage.html"><i class="fa-solid fa-house"> &nbsp; Home</i></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="text-center">
+                            <a href=".//index.html"><button id="btn-login"
+                                    class="text-sm text-black font-medium text-center bg-gray-300 hover:bg-red-500 hover:text-white rounded-3xl text-center w-4/6 my-auto h-10"><i
+                                        class="fa-solid fa-power-off"></i> Logout</button></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div
+            class="text-sm text-black font-medium justify-center font-light text-3xl h-full items-center flex max-lg:invisible">
             <a href="#"><i class="fa-solid fa-magnifying-glass"> &nbsp; Search</i></a>
         </div>
-        <div class="text-sm text-black">
+        <div class="text-sm text-black justify-center h-full items-center flex flex-nowrap max-lg:invisible">
             <a href=".//homepage.html"><i class="fa-solid fa-house"> &nbsp; Home</i></a>
         </div>
-        <div>
+        <div class="max-lg:invisible">
             <a href=".//index.html"><button id="btn-login"
-                    class="text-sm text-black font-medium bg-gray-300 hover:bg-red-500 hover:text-white rounded-3xl text-center w-full my-auto mx-auto h-10"><i
+                    class="text-sm text-black font-medium text-center bg-gray-300 hover:bg-red-500 hover:text-white rounded-3xl text-center w-28 my-auto h-10"><i
                         class="fa-solid fa-power-off"></i> Logout</button></a>
         </div>
     </header>
