@@ -34,3 +34,13 @@ document.getElementById('input-withdraw').addEventListener('keyup', function () 
     }
 
 })
+const clock = () => {
+    var hours = new Date().getHours();
+    var minutes = new Date().getMinutes();
+    const clockId = document.getElementById('clock');
+    clockId.innerHTML = `
+    ${hours}:${minutes < 10 ? `0${minutes}` : minutes}${hours > 11 ? " PM" : " AM"} 
+    `;
+    console.log(now)
+}
+clock();
